@@ -105,8 +105,8 @@ def jogar():
     palavra = escolhe_palavra()
     letras_acertadas = ['_' for letra in palavra]
     erros = 0
-    print(letras_acertadas)
     while(not enforcou and not acertou):
+        print(letras_acertadas)
         chute = input("Escolha uma letra: ").lower()
         chute.strip()
         if chute not in letras_acertadas:
@@ -122,7 +122,7 @@ def jogar():
     if acertou:
         mensagem_vencedor()
     else:
-        mensagem_perdedor()
+        mensagem_perdedor(palavra)
  
     
 
