@@ -1,5 +1,4 @@
 
-
 class Conta:
     def __init__(self, numero, titular, saldo, limite = 1000.0):
         self.numero = numero
@@ -15,5 +14,3 @@ class Conta:
 
     def saca(self, valor):
         self.saldo -= valor
-
-        
